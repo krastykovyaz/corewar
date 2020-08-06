@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/bit_shift.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/check_files.c">
 			<Option target="corewar"/>
 		</Unit>
@@ -99,10 +102,16 @@
 		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/main.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/name_comment_func.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/put_zero.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/read_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/save_prog.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/lnoisome/Desktop/corewar/corewar_src/separate.c">

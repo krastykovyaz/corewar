@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/03 09:34:04 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/04 12:58:07 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/06 19:04:33 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ t_cw    *create_struct(void)
     field->count = 0;
     field->f = 0;
     field->nb_ch = NULL;
+    field->battlefield = MEM_SIZE;
     return (field);
 }

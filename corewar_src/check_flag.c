@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/03 14:20:24 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/04 12:57:08 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/06 12:16:05 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,10 +92,10 @@ void check_n(t_cw *field)
             }
             i++;
         }
-        ft_memdel((void **)&ar);
         count = 0;
         j++;
     }
+    ft_memdel((void **)&ar);
 }
 
 int check_flag(int ac, char **av, t_cw *field)

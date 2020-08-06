@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/02 20:03:18 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/04 13:46:26 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/06 18:32:43 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,12 @@ void valid_line(int ac, char **av, t_cw *field)
 
 int main(int ac, char **av)
 {
-    int i;
     t_cw *field;
 
-    i = 0;
     field = create_struct();
     valid_line(ac, av, field);
-	read_file(ac, av);
+    read_function(ac, av, field);
+    init_battlefield(ac, av, field);
 	free_core(field);
     return (0);
 }

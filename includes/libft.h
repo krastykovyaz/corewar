@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/31 20:10:42 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/04 13:19:10 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/06 20:46:21 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct		s_list
 	int				player;
 	size_t			content_size;
 	struct s_list	*next;
+	struct t_list		*stut;
 }					t_list;
 
 char				*ft_strdub(const char *s);

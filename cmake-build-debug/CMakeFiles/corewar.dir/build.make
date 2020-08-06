@@ -499,6 +499,45 @@ CMakeFiles/corewar.dir/corewar_src/struct_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/corewar_src/struct_init.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lnoisome/Desktop/corewar/corewar_src/struct_init.c -o CMakeFiles/corewar.dir/corewar_src/struct_init.c.s
 
+CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o: ../corewar_src/bit_shift.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o   -c /Users/lnoisome/Desktop/corewar/corewar_src/bit_shift.c
+
+CMakeFiles/corewar.dir/corewar_src/bit_shift.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/corewar_src/bit_shift.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lnoisome/Desktop/corewar/corewar_src/bit_shift.c > CMakeFiles/corewar.dir/corewar_src/bit_shift.c.i
+
+CMakeFiles/corewar.dir/corewar_src/bit_shift.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/corewar_src/bit_shift.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lnoisome/Desktop/corewar/corewar_src/bit_shift.c -o CMakeFiles/corewar.dir/corewar_src/bit_shift.c.s
+
+CMakeFiles/corewar.dir/corewar_src/save_prog.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/corewar_src/save_prog.c.o: ../corewar_src/save_prog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/corewar.dir/corewar_src/save_prog.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/corewar_src/save_prog.c.o   -c /Users/lnoisome/Desktop/corewar/corewar_src/save_prog.c
+
+CMakeFiles/corewar.dir/corewar_src/save_prog.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/corewar_src/save_prog.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lnoisome/Desktop/corewar/corewar_src/save_prog.c > CMakeFiles/corewar.dir/corewar_src/save_prog.c.i
+
+CMakeFiles/corewar.dir/corewar_src/save_prog.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/corewar_src/save_prog.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lnoisome/Desktop/corewar/corewar_src/save_prog.c -o CMakeFiles/corewar.dir/corewar_src/save_prog.c.s
+
+CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o: ../corewar_src/name_comment_func.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o   -c /Users/lnoisome/Desktop/corewar/corewar_src/name_comment_func.c
+
+CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lnoisome/Desktop/corewar/corewar_src/name_comment_func.c > CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.i
+
+CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lnoisome/Desktop/corewar/corewar_src/name_comment_func.c -o CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.s
+
 # Object files for target corewar
 corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/corewar_src/main.c.o" \
@@ -534,7 +573,10 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/corewar_src/read_file.c.o" \
 "CMakeFiles/corewar.dir/corewar_src/free_core.c.o" \
 "CMakeFiles/corewar.dir/corewar_src/magic_func.c.o" \
-"CMakeFiles/corewar.dir/corewar_src/struct_init.c.o"
+"CMakeFiles/corewar.dir/corewar_src/struct_init.c.o" \
+"CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o" \
+"CMakeFiles/corewar.dir/corewar_src/save_prog.c.o" \
+"CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o"
 
 # External object files for target corewar
 corewar_EXTERNAL_OBJECTS =
@@ -573,9 +615,12 @@ corewar: CMakeFiles/corewar.dir/corewar_src/read_file.c.o
 corewar: CMakeFiles/corewar.dir/corewar_src/free_core.c.o
 corewar: CMakeFiles/corewar.dir/corewar_src/magic_func.c.o
 corewar: CMakeFiles/corewar.dir/corewar_src/struct_init.c.o
+corewar: CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o
+corewar: CMakeFiles/corewar.dir/corewar_src/save_prog.c.o
+corewar: CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o
 corewar: CMakeFiles/corewar.dir/build.make
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

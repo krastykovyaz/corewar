@@ -38,5 +38,8 @@ add_executable(corewar ./corewar_src/main.c includes/header.h includes/libft.h i
         ./corewar_src/free_core.c
         ./corewar_src/read_file.c
         ./corewar_src/magic_func.c
-        ./corewar_src/struct_init.c
+        ./corewar_src/struct_init
+        ./corewar_src/bit_shift.c
+        ./corewar_src/save_prog.c
+        ./corewar_src/name_comment_func.c
         )

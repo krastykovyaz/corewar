@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/31 19:04:52 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/04 22:43:25 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/06 19:05:13 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct	c_w
 	int			count;
 	int			f;
 	int			*nb_ch;
+	unsigned int battlefield;
 }				t_cw;
 
 int				main(int ac, char **av);
@@ -41,8 +42,16 @@ t_cw			*create_struct(void);
 void separate(char *champion, t_cw *field);
 int check_flag(int ac, char **av, t_cw *field);
 int		*put_zero(int n);
-void			read_file(int ac, char **av);
+void			read_file(int ac, char **av, t_cw *field);
 void			free_core(t_cw *field);
 header_t *struct_init(void);
 void    magic_func(unsigned char *buffer, header_t *stut);
+// void name_func(char *buffer, header_t *stut);
+void save_prog(unsigned char *buffer, header_t *stut);
+unsigned int bit_shift(unsigned char *buffer, int n);
+void name_comment_func(char *buffer, header_t *stut, int f);
+void null_check(unsigned char *buffer, header_t *stut);
+void read_function(int ac, char **av, t_cw *field);
+void init_battlefield(int ac, char **av, t_cw *field);
+
 #endif

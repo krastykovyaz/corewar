@@ -6,47 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/lnoisome/Desktop/corewar/corewar_src/check_files.c
+/Users/lnoisome/Desktop/corewar/corewar_src/bit_shift.c
 ../includes/header.h
 /Users/lnoisome/Desktop/corewar/includes/header.h
 
-/Users/lnoisome/Desktop/corewar/corewar_src/check_flag.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/create_struct.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/free_core.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/get_next_line.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/magic_func.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/main.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/put_zero.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/read_file.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/separate.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/corewar_src/struct_init.c
+/Users/lnoisome/Desktop/corewar/corewar_src/save_prog.c
 ../includes/header.h
 /Users/lnoisome/Desktop/corewar/includes/header.h
 
@@ -75,16 +39,4 @@ stdio.h
 -
 
 /Users/lnoisome/Desktop/corewar/includes/op.h
-
-/Users/lnoisome/Desktop/corewar/libft_src/ft_lstdel.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/libft_src/ft_lstnew.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
-
-/Users/lnoisome/Desktop/corewar/libft_src/ft_memcpy.c
-../includes/header.h
-/Users/lnoisome/Desktop/corewar/includes/header.h
 

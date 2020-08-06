@@ -123,6 +123,33 @@ corewar/fast:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/build
 .PHONY : corewar/fast
 
+corewar_src/bit_shift.o: corewar_src/bit_shift.c.o
+
+.PHONY : corewar_src/bit_shift.o
+
+# target to build an object file
+corewar_src/bit_shift.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o
+.PHONY : corewar_src/bit_shift.c.o
+
+corewar_src/bit_shift.i: corewar_src/bit_shift.c.i
+
+.PHONY : corewar_src/bit_shift.i
+
+# target to preprocess a source file
+corewar_src/bit_shift.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/bit_shift.c.i
+.PHONY : corewar_src/bit_shift.c.i
+
+corewar_src/bit_shift.s: corewar_src/bit_shift.c.s
+
+.PHONY : corewar_src/bit_shift.s
+
+# target to generate assembly for a file
+corewar_src/bit_shift.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/bit_shift.c.s
+.PHONY : corewar_src/bit_shift.c.s
+
 corewar_src/check_files.o: corewar_src/check_files.c.o
 
 .PHONY : corewar_src/check_files.o
@@ -312,6 +339,33 @@ corewar_src/main.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/main.c.s
 .PHONY : corewar_src/main.c.s
 
+corewar_src/name_comment_func.o: corewar_src/name_comment_func.c.o
+
+.PHONY : corewar_src/name_comment_func.o
+
+# target to build an object file
+corewar_src/name_comment_func.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o
+.PHONY : corewar_src/name_comment_func.c.o
+
+corewar_src/name_comment_func.i: corewar_src/name_comment_func.c.i
+
+.PHONY : corewar_src/name_comment_func.i
+
+# target to preprocess a source file
+corewar_src/name_comment_func.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.i
+.PHONY : corewar_src/name_comment_func.c.i
+
+corewar_src/name_comment_func.s: corewar_src/name_comment_func.c.s
+
+.PHONY : corewar_src/name_comment_func.s
+
+# target to generate assembly for a file
+corewar_src/name_comment_func.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.s
+.PHONY : corewar_src/name_comment_func.c.s
+
 corewar_src/put_zero.o: corewar_src/put_zero.c.o
 
 .PHONY : corewar_src/put_zero.o
@@ -365,6 +419,33 @@ corewar_src/read_file.s: corewar_src/read_file.c.s
 corewar_src/read_file.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/read_file.c.s
 .PHONY : corewar_src/read_file.c.s
+
+corewar_src/save_prog.o: corewar_src/save_prog.c.o
+
+.PHONY : corewar_src/save_prog.o
+
+# target to build an object file
+corewar_src/save_prog.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/save_prog.c.o
+.PHONY : corewar_src/save_prog.c.o
+
+corewar_src/save_prog.i: corewar_src/save_prog.c.i
+
+.PHONY : corewar_src/save_prog.i
+
+# target to preprocess a source file
+corewar_src/save_prog.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/save_prog.c.i
+.PHONY : corewar_src/save_prog.c.i
+
+corewar_src/save_prog.s: corewar_src/save_prog.c.s
+
+.PHONY : corewar_src/save_prog.s
+
+# target to generate assembly for a file
+corewar_src/save_prog.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/corewar_src/save_prog.c.s
+.PHONY : corewar_src/save_prog.c.s
 
 corewar_src/separate.o: corewar_src/separate.c.o
 
@@ -1050,6 +1131,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... corewar"
+	@echo "... corewar_src/bit_shift.o"
+	@echo "... corewar_src/bit_shift.i"
+	@echo "... corewar_src/bit_shift.s"
 	@echo "... corewar_src/check_files.o"
 	@echo "... corewar_src/check_files.i"
 	@echo "... corewar_src/check_files.s"
@@ -1071,12 +1155,18 @@ help:
 	@echo "... corewar_src/main.o"
 	@echo "... corewar_src/main.i"
 	@echo "... corewar_src/main.s"
+	@echo "... corewar_src/name_comment_func.o"
+	@echo "... corewar_src/name_comment_func.i"
+	@echo "... corewar_src/name_comment_func.s"
 	@echo "... corewar_src/put_zero.o"
 	@echo "... corewar_src/put_zero.i"
 	@echo "... corewar_src/put_zero.s"
 	@echo "... corewar_src/read_file.o"
 	@echo "... corewar_src/read_file.i"
 	@echo "... corewar_src/read_file.s"
+	@echo "... corewar_src/save_prog.o"
+	@echo "... corewar_src/save_prog.i"
+	@echo "... corewar_src/save_prog.s"
 	@echo "... corewar_src/separate.o"
 	@echo "... corewar_src/separate.i"
 	@echo "... corewar_src/separate.s"

@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/04 22:35:56 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/06 13:16:16 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,13 @@ C_SRC = main.c \
 	read_file.c \
 	free_core.c \
 	struct_init.c \
-	magic_func.c
+	magic_func.c \
+	save_prog.c \
+	bit_shift.c \
+	name_comment_func.c \
+	null_check.c \
+	read_function.c \
+	init_battlefield.c
 
 C_FILES = $(addprefix $(COREWAR_DIR), $(C_SRC))
 C_OBJ = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.o, $(C_SRC)))

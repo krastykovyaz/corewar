@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o"
   "CMakeFiles/corewar.dir/corewar_src/check_files.c.o"
   "CMakeFiles/corewar.dir/corewar_src/check_flag.c.o"
   "CMakeFiles/corewar.dir/corewar_src/create_struct.c.o"
@@ -6,8 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/corewar_src/get_next_line.c.o"
   "CMakeFiles/corewar.dir/corewar_src/magic_func.c.o"
   "CMakeFiles/corewar.dir/corewar_src/main.c.o"
+  "CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o"
   "CMakeFiles/corewar.dir/corewar_src/put_zero.c.o"
   "CMakeFiles/corewar.dir/corewar_src/read_file.c.o"
+  "CMakeFiles/corewar.dir/corewar_src/save_prog.c.o"
   "CMakeFiles/corewar.dir/corewar_src/separate.c.o"
   "CMakeFiles/corewar.dir/corewar_src/struct_init.c.o"
   "CMakeFiles/corewar.dir/libft_src/ft_atoi.c.o"

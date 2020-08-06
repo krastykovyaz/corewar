@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/lnoisome/Desktop/corewar/corewar_src/bit_shift.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/bit_shift.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/check_files.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/check_files.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/check_flag.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/check_flag.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/create_struct.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/create_struct.c.o"
@@ -11,8 +12,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/lnoisome/Desktop/corewar/corewar_src/get_next_line.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/get_next_line.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/magic_func.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/magic_func.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/main.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/main.c.o"
+  "/Users/lnoisome/Desktop/corewar/corewar_src/name_comment_func.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/name_comment_func.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/put_zero.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/put_zero.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/read_file.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/read_file.c.o"
+  "/Users/lnoisome/Desktop/corewar/corewar_src/save_prog.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/save_prog.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/separate.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/separate.c.o"
   "/Users/lnoisome/Desktop/corewar/corewar_src/struct_init.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/corewar_src/struct_init.c.o"
   "/Users/lnoisome/Desktop/corewar/libft_src/ft_atoi.c" "/Users/lnoisome/Desktop/corewar/cmake-build-debug/CMakeFiles/corewar.dir/libft_src/ft_atoi.c.o"
