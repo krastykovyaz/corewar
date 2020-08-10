@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/02 11:08:44 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:29:36 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/09 20:35:10 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/10 09:49:58 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/corewar.h"
 
 void	ft_putnbr(int nb)
 {

@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/05 14:46:31 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/06 10:01:43 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/08 19:49:12 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/header.h"
+#include "../includes/corewar.h"
 
 unsigned int bit_shift(unsigned char *buffer, int n)
 {

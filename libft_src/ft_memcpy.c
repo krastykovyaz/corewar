@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 15:00:06 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:28:10 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/07 15:38:19 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/header.h"
+#include "../includes/corewar.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

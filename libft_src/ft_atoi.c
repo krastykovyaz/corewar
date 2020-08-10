@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/02 10:41:02 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:25:06 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/07 19:58:03 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/07 22:24:52 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/corewar.h"
 
-__int128_t	ft_atoi(const char *s)
+__int64_t	ft_atoi(const char *s)
 {
-	__int128_t	nb;
+	__int64_t	nb;
 	int			sign;
 	int			i;
 

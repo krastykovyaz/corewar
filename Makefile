@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/06 13:16:16 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/10 19:45:24 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,53 +26,45 @@ COREWAR_DIR = ./corewar_src/
 COREWAR_HEADER = ./includes/
 
 C_SRC = main.c \
-	get_next_line.c \
-	create_struct.c \
-	check_files.c \
-	separate.c \
-	check_flag.c \
-	put_zero.c \
-	read_file.c \
-	free_core.c \
-	struct_init.c \
-	magic_func.c \
-	save_prog.c \
-	bit_shift.c \
-	name_comment_func.c \
-	null_check.c \
-	read_function.c \
-	init_battlefield.c
+		init_data.c \
+		ft_calloc.c \
+		ft_error.c \
+		init_vm.c \
+		parsing.c \
+		valid_dump.c \
+		valid_n.c \
+		valid_id_name.c \
+		pars_champ.c \
+		check_m_h.c \
+		bit_shift.c \
+		valid_champ_name.c \
+		valid_exec_size.c \
+		check_comment.c \
+		valid_ex_code.c \
+		finish_players.c \
+		init_carry.c \
+		ft_lstnew.c \
+		ft_lstadd.c \
+		print_start.c \
+		free_data.c
 
 C_FILES = $(addprefix $(COREWAR_DIR), $(C_SRC))
 C_OBJ = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.o, $(C_SRC)))
-D_FILES_LEM = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.d, $(C_SRC)))
+D_FILES_CW = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.d, $(C_SRC)))
 
 LIBFT_DIR = ./libft_src/
 
-L_SRC = ft_memset.c \
-		ft_strcat.c \
-		ft_strchr.c \
-		ft_strcpy.c \
-		ft_strdel.c \
-		ft_strdub.c \
-		ft_strjoin.c \
-		ft_strlen.c \
-		ft_strnew.c \
-		ft_strsub.c \
-		ft_atoi.c \
-		ft_putstr.c \
-		ft_putnbr.c \
-		ft_putchar.c \
-		ft_memdel.c \
-		ft_isinteger.c \
+L_SRC = ft_strlen.c \
+		ft_memcpy.c \
+		ft_memset.c \
 		ft_strequ.c \
 		ft_strcmp.c \
-		ft_lstdel.c \
-		ft_lstadd.c \
-		ft_lstnew.c \
-		ft_memcpy.c \
-		ft_strsplit.c \
-		ft_strdup.c
+		ft_atoi.c \
+		ft_isdigit.c \
+		ft_swap.c \
+		ft_putnbr.c \
+		ft_putchar.c \
+		ft_putstr.c
 
 LIBA_FILES = $(addprefix $(LIBFT_DIR), $(L_SRC))
 LIBA_OBJ = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.o, $(L_SRC)))
@@ -81,6 +73,9 @@ D_FILES_LIBA = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.d, $(L_SRC)))
 COREWAR_FILES = $(C_FILES) $(LIBA_FILES)
 COREWAR_OBJ = $(C_OBJ) $(LIBA_OBJ)
 D_FILES = $(D_FILES_LEM) \& $(D_FILES_LIBA)
+# COREWAR_FILES = $(C_FILES)
+# COREWAR_OBJ = $(C_OBJ)
+# D_FILES = $(D_FILES_CW)
 .PHONY: all clean fclean re
 
 all: $(COREWAR_NAME)

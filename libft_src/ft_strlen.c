@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/31 21:01:42 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:34:32 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/07 20:00:59 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/corewar.h"
 
 size_t	ft_strlen(const char *s)
 {

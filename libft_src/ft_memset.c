@@ -5,22 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/31 21:22:37 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:28:54 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/07 12:20:03 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/09 09:29:26 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/corewar.h"
 
 void	*ft_memset(void *s, int c, size_t len)
 {
-	size_t i;
+	const unsigned char value = c;
+	unsigned char *str;
 
-	i = 0;
-	while (i < len)
+	str = (unsigned char *)s;
+	while (len)
 	{
-		((unsigned char *)s)[len] = (unsigned char)c;
-		i++;
+		*str = value;
+		str += 1;
+		len -= 1;
 	}
 	return (s);
-}
+}              

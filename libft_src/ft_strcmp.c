@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/21 20:59:35 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:30:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/07 19:56:33 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/07 19:56:59 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/corewar.h"
 
 int	ft_strcmp(const char *s1, const char *s2)
 {

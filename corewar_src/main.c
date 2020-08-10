@@ -5,38 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/02 20:03:18 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/06 18:32:43 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/10 19:43:15 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/header.h"
-
-void valid_line(int ac, char **av, t_cw *field)
-{
-    if (ac > 1)
-    {
-        field->count = check_files(ac, av);
-        ac = check_flag(ac, av, field);
-        if (field->count != (ac - 1)){
-           printf("Error\n");
-        }
-    }
-    else
-    {
-        printf("Error\n");
-        exit (1);
-    }
-}
+#include "../includes/corewar.h"
 
 int main(int ac, char **av)
 {
-    t_cw *field;
+    t_vm virtual_machine;
 
-    field = create_struct();
-    valid_line(ac, av, field);
-    read_function(ac, av, field);
-    init_battlefield(ac, av, field);
-	free_core(field);
+    init_data(&virtual_machine, ac ,av);
+    
+    print_start(&virtual_machine.players);
+    free_data(&virtual_machine);
     return (0);
 }

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/21 20:57:31 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/07/17 22:31:35 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/07 19:39:08 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/07 19:41:32 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/corewar.h"
 
 int		ft_strequ(const char *s1, const char *s2)
 {
