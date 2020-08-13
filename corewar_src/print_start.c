@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/09 16:30:23 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/10 19:42:07 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/11 21:23:32 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void print_start(t_players *players)
 
     i = 0;
     n = '0';
+    
     write(1, "Introducing contestants...\n", 27);
     while (i < players->size)
     {

@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:15:03 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/10 11:59:13 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/13 13:48:07 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,21 @@
 # define VM_H
 
 # include "op.h"
+# include "oper.h"
 // # include "libft.h"
 
 typedef struct s_car
 {
 	int id;
 	int pos;
-	unsigned int step;
+	unsigned int step;  /*количество байт, которые нужно будет «перешагнуть», чтобы оказаться на следующей операции*/
 	int regist[REG_NUMBER];
 	struct s_car *next;
 	struct s_car *prev;
+	int last_live_cycle; /*цикл, в котором в последний раз была выполнена операция live*/
+	int cycle_to_action; /*количество циклов до исполнения операции*/
+	int code; /*код операции*/
+	int position; /*позиция каретки*/
 }				t_car;
 
 typedef struct s_player
@@ -52,7 +57,11 @@ typedef struct s_vm
 	t_players	players;
 	int id_car;
 	int num_car;
-	t_car carry;
+	t_car *carry;
+	int count_check; 
+	int count_live; /*Количество операций live*/
+	int iter; /* количество циклов, прошедших после старта*/
+	t_op  operations; 
 }						t_vm;
 
 typedef struct s_pars

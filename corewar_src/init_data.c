@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:28:06 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/10 19:37:05 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/12 21:33:16 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void init_players(t_players *players)
 void		init_data(t_vm *vm, int ac, char **av)
 {
     ft_memset(vm, 0, sizeof(t_vm));
+    set_oper(vm);
     init_players(&(vm->players));
     parsing(&(vm->players), ac, av);
     init_vm(vm, &(vm->players));

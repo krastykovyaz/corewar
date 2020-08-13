@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   end_game.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 13:17:28 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/07 13:21:57 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/12 10:50:06 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/12 12:49:19 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "corewar.h"
+#include "../includes/corewar.h"
 
-void *ft_calloc(size_t elem, size_t size_elem)
+int end_game(t_vm *vm, t_players *players)
 {
-    void *pt;
-    size_t size;
+    t_player *winner;
+    int id;
 
-    size = elem * size_elem;
-    pt = malloc(size);
-    if (pt)
-        ft_memset(pt, 0, size);
-    return (pt);
+    id = 
+    winner = 
+
 }

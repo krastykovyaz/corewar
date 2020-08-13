@@ -1,4 +1,4 @@
-corewar_src/ft_calloc.o: corewar_src/ft_calloc.c includes/corewar.h \
+oper_src/oper_func.o: oper_src/oper_func.c oper_src/../includes/corewar.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdlib.h \
@@ -81,7 +81,9 @@ corewar_src/ft_calloc.o: corewar_src/ft_calloc.c includes/corewar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_nlink_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_gid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_time_t.h \
-  includes/vm.h includes/op.h includes/lidft.h \
+  oper_src/../includes/vm.h oper_src/../includes/op.h \
+  oper_src/../includes/oper.h oper_src/../includes/../includes/corewar.h \
+  oper_src/../includes/lidft.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_posix_vdisable.h \

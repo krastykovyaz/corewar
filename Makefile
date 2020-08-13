@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/10 19:45:24 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/13 14:58:31 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,6 @@ COREWAR_HEADER = ./includes/
 
 C_SRC = main.c \
 		init_data.c \
-		ft_calloc.c \
 		ft_error.c \
 		init_vm.c \
 		parsing.c \
@@ -46,11 +45,23 @@ C_SRC = main.c \
 		ft_lstnew.c \
 		ft_lstadd.c \
 		print_start.c \
-		free_data.c
+		free_data.c \
+		game.c \
+		check_live.c \
+		check_carry.c \
 
 C_FILES = $(addprefix $(COREWAR_DIR), $(C_SRC))
 C_OBJ = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.o, $(C_SRC)))
 D_FILES_CW = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.d, $(C_SRC)))
+
+OPER_DIR = ./oper_src/
+
+O_SRC = set_oper.c \
+		oper_func.c 
+
+O_FILES = $(addprefix $(O_DIR), $(O_SRC))
+O_OBJ = $(addprefix $(OPER_DIR), $(patsubst %.c, %.o, $(O_SRC)))
+D_FILES_OPER = $(addprefix $(OPER_DIR), $(patsubst %.c, %.d, $(O_SRC)))
 
 LIBFT_DIR = ./libft_src/
 
@@ -64,15 +75,20 @@ L_SRC = ft_strlen.c \
 		ft_swap.c \
 		ft_putnbr.c \
 		ft_putchar.c \
-		ft_putstr.c
+		ft_putstr.c \
+		print_memory.c \
+		del_end.c \
+		del_start.c \
+		del_midl.c \
+		ft_calloc.c 
 
 LIBA_FILES = $(addprefix $(LIBFT_DIR), $(L_SRC))
 LIBA_OBJ = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.o, $(L_SRC)))
 D_FILES_LIBA = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.d, $(L_SRC)))
 
-COREWAR_FILES = $(C_FILES) $(LIBA_FILES)
-COREWAR_OBJ = $(C_OBJ) $(LIBA_OBJ)
-D_FILES = $(D_FILES_LEM) \& $(D_FILES_LIBA)
+COREWAR_FILES = $(C_FILES) $(LIBA_FILES) $(O_FILES)
+COREWAR_OBJ = $(C_OBJ) $(LIBA_OBJ) $(O_OBJ)
+D_FILES = $(D_FILES_LEM) \& $(D_FILES_LIBA) \& $(D_FILES_OPER)
 # COREWAR_FILES = $(C_FILES)
 # COREWAR_OBJ = $(C_OBJ)
 # D_FILES = $(D_FILES_CW)
@@ -90,6 +106,10 @@ $(COREWAR_DIR)%.o: $(COREWAR_DIR)%.c
 
 $(LIBFT_DIR)%.o: $(LIBFT_DIR)%.c
 	@$(CC) $(FLAGS) -I $(LIBFT_DIR) -MD -c $< -o $@
+	@echo $(CYAN)Compiling... $<$(RESET)
+
+$(OPER_DIR)%.o: $(OPER_DIR)%.c
+	@$(CC) $(FLAGS) -I $(OPER_DIR) -MD -c $< -o $@
 	@echo $(CYAN)Compiling... $<$(RESET)
 
 clean:

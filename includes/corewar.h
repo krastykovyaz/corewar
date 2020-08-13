@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:07:35 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/09 18:43:12 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/13 14:58:05 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,12 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 # include "vm.h"
-// # include "op.h"
 # include "lidft.h"
 
 
 
 void		init_data(t_vm *vm, int ac, char **av);
 int main(int ac, char **av);
-void *ft_calloc(size_t elem, size_t size_elem);
 void ft_error(const char * msg, const char *func, int code);
 void parsing(t_players *s_players, int ac, char **av);
 void init_vm(t_vm *vm, t_players *players);
@@ -45,6 +43,10 @@ void init_carry(t_vm *vm, int iter);
 void	ft_lstadd_start(t_car **head, t_car *new);
 t_car    *ft_lstnew(int position, int id);
 void print_start(t_players *player);
+int check_live(t_vm *vm);
+t_car *kill_carry(t_vm *vm, t_car **head, t_car *cur_car, int cycle_to_die);
+void game(t_vm *vm);
+t_car *check_carry(t_vm *vm, t_car *car);
 
 
 #endif

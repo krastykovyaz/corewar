@@ -83,6 +83,8 @@ libft_src/ft_memset.o: libft_src/ft_memset.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_gid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_time_t.h \
   libft_src/../includes/vm.h libft_src/../includes/op.h \
+  libft_src/../includes/oper.h \
+  libft_src/../includes/../includes/corewar.h \
   libft_src/../includes/lidft.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/unistd.h \

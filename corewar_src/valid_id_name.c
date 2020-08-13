@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 11:04:52 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/10 09:34:04 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/11 21:43:25 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void sort_id(t_players *players, int i, int j)
     i = -1;
     while (++i < players->iter)
         while (players->arr[i]->flag_n && i != players->arr[i]->id - 1)
-			ft_swap(players->arr[players->arr[i]->id - 1], players->arr[i]);
+			ft_swap(&players->arr[players->arr[i]->id - 1], &players->arr[i]);
     i = -1;
     j = 0;
     while (++i < players->iter)    

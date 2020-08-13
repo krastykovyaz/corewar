@@ -6,53 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 14:52:25 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/09 15:26:45 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/13 09:40:41 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
-
-void	print_memory(const void *addr, size_t size)
-{
-	size_t			i;
-	size_t 			j;
-	unsigned char	*p;
-	char 			*str;
-
-	str = "0123456789abcdef";
-	p = (unsigned char *)addr;
-	i = 0;
-	while (i < size)
-	{
-		j = 0;
-		while (j < 16 && i + j < size)
-		{
-			write(1, &str[(*(p + i + j)/16) % 16], 1);
-			write(1, &str[*(p + i + j) % 16], 1);
-			if (j % 2)
-				write(1, " ", 1);
-			j += 1;
-		}
-		while (j < 16)
-		{
-			write(1, "  ", 2);
-			if (j % 2)
-				write(1, " ", 1);
-			j++;
-		}
-		j = 0;
-		while (j < 16 && i + j < size)
-		{
-			if (*(p + i + j) >= 32 && *(p + i + j) < 127)
-				write(1, p + i + j, 1);
-			else
-				write(1, ".", 1);
-			j += 1;
-		}
-		write(1, "\n", 1);
-		i += 16;
-	}
-}
 
 static void copy_excode(t_vm *vm, t_players *players)
 {
