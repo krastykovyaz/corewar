@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   o_live.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/14 17:22:01 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/20 19:24:37 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+void o_live(t_vm *vm, t_car *car, t_args *arg)
 {
-    t_vm virtual_machine;
-
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+	int champ;
+	
+	(void)arg->first;
+	vm->count_live++;
+	car->last_live_cycle = 0;
+	champ = read_4_bytes(vm, (car->position + 1) % MEM_SIZE) * -1;
+	if (champ > 0 && champ <= vm->players.size)
+		vm->win_id = champ;
+	car->position = ((car->position) + 5) % MEM_SIZE;
+	car->step = 1;
+	// printf("%i\n", car->carry);
+	// printf("%i\n", car->position);
 }

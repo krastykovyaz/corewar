@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   read_4_bytes.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/15 09:37:14 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/20 19:40:50 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+int read_4_bytes(t_vm *vm, int position)
 {
-    t_vm virtual_machine;
+	int val;
+	int i;
 
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+	i = 0;
+	val = 0;
+	while (i < 4)
+	{
+		*((char *)&val + 3 - i) = vm->arena[(position + i) % MEM_SIZE];
+		i++;
+	}
+	return (val);
 }

@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/09 16:30:23 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/11 21:23:32 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/19 19:19:54 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,20 @@ void print_start(t_players *players)
     i = 0;
     n = '0';
     
-    write(1, "Introducing contestants...\n", 27);
+    ft_putstr("Introducing contestants...\n");
     while (i < players->size)
     {
-        write(1, "Player ", 7);
+        ft_putstr("* Player ");
         n++;
         write(1, &n, 1);
-        write(1, ", weighing ", 11);
+        ft_putstr(", weighing ");
         ft_putnbr(players->arr[i]->ex_size);
-        write(1, " bytes, \"", 10);
+        ft_putstr(" bytes, \"");
         ft_putstr(players->arr[i]->name);
-        write(1, "\" (\"", 4);
+        ft_putstr("\" (\"");
         ft_putstr(players->arr[i]->comment);
-        write(1, "\") !", 4);
-        write(1, "\n", 1);
+        ft_putstr("\") !");
+        ft_putchar('\n');
         i++;
     }
 }

@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/13 14:58:31 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/19 14:48:04 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,9 @@ C_SRC = main.c \
 		game.c \
 		check_live.c \
 		check_carry.c \
+		end_dump.c \
+		del_fun.c \
+		conclusion.c
 
 C_FILES = $(addprefix $(COREWAR_DIR), $(C_SRC))
 C_OBJ = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.o, $(C_SRC)))
@@ -57,7 +60,38 @@ D_FILES_CW = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.d, $(C_SRC)))
 OPER_DIR = ./oper_src/
 
 O_SRC = set_oper.c \
-		oper_func.c 
+		oper_func.c \
+		o_live.c \
+		read_4_bytes.c \
+		o_ld.c \
+		read_2_bytes.c \
+		get_set_pos.c \
+		check_arg.c \
+		def_arg.c \
+		change_pos.c \
+		read_1_byte.c \
+		o_st.c \
+		check_reg.c \
+		o_add.c \
+		plus_minus.c \
+		o_sub.c \
+		o_and.c \
+		write_to_reg.c \
+		get_arg_dir.c \
+		o_or.c \
+		o_xor.c \
+		o_zjmp.c \
+		o_ldi.c \
+		valid_args.c \
+		get_arg.c \
+		o_sti.c \
+		get_third.c \
+		o_fork.c \
+		carret.c \
+		o_lldi.c \
+		o_lld.c \
+		o_lfork.c \
+		o_aff.c
 
 O_FILES = $(addprefix $(O_DIR), $(O_SRC))
 O_OBJ = $(addprefix $(OPER_DIR), $(patsubst %.c, %.o, $(O_SRC)))

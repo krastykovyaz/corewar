@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   check_arg.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/15 09:41:44 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/15 18:50:57 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+int check_arg(int arg)
 {
-    t_vm virtual_machine;
-
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+	arg = (arg >> 6) & 0x03;
+	if (0x01 == arg)
+		return (REG_CODE);
+	else if (0x02 == arg)
+		return (DIR_CODE);
+	else if (0x03 == arg)
+		return (IND_CODE);
+	return (0);
 }

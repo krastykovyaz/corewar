@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/31 20:10:42 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/13 14:55:11 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/18 11:33:13 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putnbr(int nb);
 void	ft_putstr(const char *s);
 void	ft_putchar(char c);
 void free_data(t_vm *vm);
-void	print_memory(const void *addr, size_t size);
+void	print_memory(const void *arena, size_t size);
 t_car *del_start(t_car **head, t_car *cur_car);
 t_car *del_end(t_car *cur_car);
 t_car *del_midl(t_car *cur_car);

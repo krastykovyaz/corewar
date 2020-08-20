@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:07:35 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/13 14:58:05 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/19 09:52:18 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,9 @@ int check_live(t_vm *vm);
 t_car *kill_carry(t_vm *vm, t_car **head, t_car *cur_car, int cycle_to_die);
 void game(t_vm *vm);
 t_car *check_carry(t_vm *vm, t_car *car);
+int end_dump(t_vm *vm);
+t_car			*del_func(t_car **head, t_car *cur_car);
+int conclusion(t_vm *vm, t_players *players);
 
 
 #endif

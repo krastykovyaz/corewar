@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   o_add.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/16 18:23:17 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/19 14:48:04 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+void o_add(t_vm *vm, t_car *car, t_args *arg)
 {
-    t_vm virtual_machine;
-
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+	arg->first = def_arg(vm->arena[get_pos(car, car->step)], 0);
+	arg->second = def_arg(vm->arena[get_pos(car, car->step)], 1);
+	arg->third = def_arg(vm->arena[get_pos(car, car->step)], 2);
+	if (arg->first == REG_CODE && arg->second == REG_CODE && arg->third == REG_CODE)
+		plus_minus(vm, car, arg, 1);
+	change_pos(car, arg, 3);
+	// printf("%i\n", car->position);
 }

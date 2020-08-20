@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   del_fun.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/18 10:51:49 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/18 10:56:38 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+t_car			*del_func(t_car **head, t_car *cur_car)
 {
-    t_vm virtual_machine;
-
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+    if (cur_car->next)
+    {
+        cur_car = cur_car->next;
+        free(cur_car->prev);
+        cur_car->prev = NULL;
+        *head = cur_car;
+    }
+    else
+    {
+        free(cur_car);
+        cur_car = NULL;
+        *head = NULL;
+    }
+    return (cur_car);
 }

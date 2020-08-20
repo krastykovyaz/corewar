@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/09 14:31:59 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/11 22:45:35 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/19 21:00:50 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ void init_carry(t_vm *vm, int iter)
         vm->num_car++;
     }
     vm->carry = list;
+    // printf("%i\n", list->carry);
 }

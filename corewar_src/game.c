@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 22:09:18 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/13 14:59:50 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/20 17:15:06 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,14 @@ void game(t_vm *vm)
     end = 0;
     while(!end)
     {
+        // printf("last = %i\n", vm->carry->last_live_cycle);
+        if (vm->cur_cycle++ == vm->dump_value && end_dump(vm))
+            break ;
         tmp = vm->carry;
+        // printf("%i\n", tmp->carry);
         while (tmp)
             tmp = check_carry(vm, tmp);
         if (++vm->iter >= vm->cycle_to_die && !check_live(vm))
-            end = 1;
+            end = conclusion(vm, &vm->players);
     }
 }

@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   def_arg.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/15 19:08:57 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/16 19:46:29 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+int def_arg(unsigned char code, unsigned arg)
 {
-    t_vm virtual_machine;
+	const unsigned char pos = 0b11000000;
+	
+	code = (code << (arg << 1));
+	code = code & pos;
+	if (code == 0b01000000)
+		return (REG_CODE);
+	if (code == 0b10000000)
+		return (DIR_SIZE);
+	if (code == 0b11000000)
+		return (IND_SIZE);
+	else
+		return (0);
 
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
 }

@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   conclusion.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/19 09:47:41 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/19 10:36:52 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+int conclusion(t_vm *vm, t_players *players)
 {
-    t_vm virtual_machine;
+    t_player *winner;
+    int id;
 
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+    id = vm->win_id;
+    winner = players->arr[vm->win_id - 1];
+    ft_putstr("Contestant ");
+    ft_putnbr(id);
+    ft_putstr(", \"");
+    ft_putstr(winner->name);
+    ft_putstr("\", has won !\n");
+    return (1);
 }

@@ -6,50 +6,47 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 19:48:57 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/11 19:53:15 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/18 12:49:47 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-void	print_memory(const void *addr, size_t size)
+static void			add(int i)
 {
-	size_t			i;
-	size_t 			j;
-	unsigned char	*p;
-	char 			*str;
+	char			*str;
 
 	str = "0123456789abcdef";
-	p = (unsigned char *)addr;
+	ft_putstr("0x");
+	write(1, &str[((i >> 8) / 16) % 16], 1);
+	write(1, &str[(i >> 8) % 16], 1);
+	write(1, &str[(i / 16) % 16], 1);
+	write(1, &str[i % 16], 1);
+	ft_putstr(" : ");
+}
+
+void	print_memory(const void *arena, size_t size)
+{
+	size_t			i;
+	size_t			j;
+	unsigned char	*p;
+	char			*str;
+
+	str = "0123456789abcdef";
+	p = (unsigned char *)arena;
 	i = 0;
-	while (i < size)
+	while (i < MEM_SIZE)
 	{
+		add(i);
 		j = 0;
-		while (j < 16 && i + j < size)
+		while (j < size && i + j < MEM_SIZE)
 		{
-			write(1, &str[(*(p + i + j)/16) % 16], 1);
+			write(1, &str[(*(p + i + j) / 16) % 16], 1);
 			write(1, &str[*(p + i + j) % 16], 1);
-			if (j % 2)
-				write(1, " ", 1);
-			j += 1;
-		}
-		while (j < 16)
-		{
-			write(1, "  ", 2);
-			if (j % 2)
-				write(1, " ", 1);
+			ft_putstr(" ");
 			j++;
 		}
-		j = 0;
-		while (j < 16 && i + j < size)
-		{
-			if (*(p + i + j) >= 32 && *(p + i + j) < 127)
-				write(1, p + i + j, 1);
-			else
-				write(1, ".", 1);
-			j += 1;
-		}
-		write(1, "\n", 1);
-		i += 16;
+		ft_putchar('\n');
+		i += size;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 14:52:25 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/13 09:40:41 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/19 10:58:32 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,7 @@ void    init_vm(t_vm *vm, t_players *players)
     init_vm_arena(vm, players);
     // print_memory(vm->arena, MEM_SIZE);
     init_carry(vm, players->size);
+    vm->dump_value = players->dump_num >= 0 ? players->dump_num : -1;
+	vm->dump_size = players->dump_size;
+    vm->win_id = players->size;
 }

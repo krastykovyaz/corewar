@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 14:44:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/09 15:45:04 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/14 17:53:54 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_car	*ft_lstnew(int position, int id)
         ft_error("Error in malloc", "ft_lstnew", 3);
 	else
 	{
-		lnew->pos = position;
+		lnew->position = position;
         lnew->id = id;
         lnew->regist[0] = -id;
         lnew->step = 1;

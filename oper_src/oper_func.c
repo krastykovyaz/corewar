@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/13 13:07:52 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/13 13:47:33 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/20 08:22:01 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void oper_func_cont(t_vm *vm, t_car *car, t_args *arg, int i)
 {
-    if (i == 9)
+    if (i == 10)
         o_sti(vm, car, arg);
-    else if (i == 10)
-        o_fork(vm, car, arg);
     else if (i == 11)
-        o_lld(vm, car, arg);
+        o_fork(vm, car, arg);
     else if (i == 12)
-        o_lldi(vm, car, arg);
+        o_lld(vm, car, arg);
     else if (i == 13)
-        o_lfork(vm, car, arg);
+        o_lldi(vm, car, arg);
     else if (i == 14)
+        o_lfork(vm, car, arg);
+    else if (i == 15)
         o_aff(vm, car, arg);
 }
 
@@ -41,12 +41,14 @@ void oper_func(t_vm *vm, t_car *car, t_args *arg, int i)
     else if (i == 4)
         o_sub(vm, car, arg);
     else if (i == 5)
-        o_or(vm, car, arg);
+        o_and(vm, car, arg);
     else if (i == 6)
-        o_xor(vm, car, arg);
+        o_or(vm, car, arg);
     else if (i == 7)
-        o_zjmpi(vm, car, arg);
+        o_xor(vm, car, arg);
     else if (i == 8)
+        o_zjmp(vm, car, arg);
+    else if (i == 9)
         o_ldi(vm, car, arg);
     else
         oper_func_cont(vm, car, arg, i);

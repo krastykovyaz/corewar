@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   end_dump.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/08/18 10:47:24 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/08/18 11:56:38 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int main(int ac, char **av)
+int end_dump(t_vm *vm)
 {
-    t_vm virtual_machine;
-
-    init_data(&virtual_machine, ac ,av);
-    print_start(&virtual_machine.players);
-    game(&virtual_machine);
-    free_data(&virtual_machine);
-
-    return (0);
+    t_car *tmp;
+    // printf("%i\n", vm->dump_size);
+    print_memory(vm->arena, vm->dump_size);
+    tmp = vm->carry;
+    // while(tmp)
+    //     tmp = del_func(&vm->carry, tmp);
+    return (1);
 }
