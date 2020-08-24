@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:05:55 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:47:27 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/22 20:58:02 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,5 @@ int main(int ac, char **av)
     print_start(&virtual_machine.players);
     game(&virtual_machine);
     free_data(&virtual_machine);
-
     return (0);
 }

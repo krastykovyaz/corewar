@@ -1,0 +1,96 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/bit_shift.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/bit_shift.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/check_carry.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/check_carry.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/check_comment.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/check_comment.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/check_live.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/check_live.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/check_m_h.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/check_m_h.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/conclusion.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/conclusion.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/del_fun.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/del_fun.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/end_dump.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/end_dump.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/finish_players.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/finish_players.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/free_data.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/free_data.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/ft_error.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/ft_error.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/ft_lstadd.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/ft_lstadd.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/ft_lstnew.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/ft_lstnew.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/game.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/game.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/init_carry.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/init_carry.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/init_data.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/init_data.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/init_vm.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/init_vm.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/main.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/main.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/pars_champ.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/pars_champ.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/parsing.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/parsing.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/print_start.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/print_start.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/valid_champ_name.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/valid_champ_name.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/valid_dump.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/valid_dump.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/valid_ex_code.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/valid_ex_code.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/valid_exec_size.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/valid_exec_size.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/valid_id_name.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/valid_id_name.c.o"
+  "/Users/lnoisome/Downloads/cor_war/corewar_src/valid_n.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/corewar_src/valid_n.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/del_end.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/del_end.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/del_midl.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/del_midl.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/del_start.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/del_start.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_atoi.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_atoi.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_calloc.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_calloc.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_isdigit.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_isdigit.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_memcpy.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_memcpy.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_memset.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_memset.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_putchar.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_putchar.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_putnbr.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_putnbr.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_putstr.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_putstr.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_strcmp.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_strcmp.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_strequ.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_strequ.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_strlen.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_strlen.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/ft_swap.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/ft_swap.c.o"
+  "/Users/lnoisome/Downloads/cor_war/libft_src/print_memory.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/libft_src/print_memory.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/carret.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/carret.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/change_pos.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/change_pos.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/check_arg.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/check_arg.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/check_reg.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/check_reg.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/def_arg.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/def_arg.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/get_arg.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/get_arg.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/get_arg_dir.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/get_arg_dir.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/get_set_pos.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/get_set_pos.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/get_third.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/get_third.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_add.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_add.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_aff.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_aff.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_and.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_and.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_fork.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_fork.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_ld.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_ld.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_ldi.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_ldi.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_lfork.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_lfork.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_live.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_live.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_lld.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_lld.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_lldi.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_lldi.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_or.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_or.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_st.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_st.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_sti.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_sti.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_sub.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_sub.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_xor.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_xor.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/o_zjmp.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/o_zjmp.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/oper_func.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/oper_func.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/plus_minus.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/plus_minus.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/read_1_byte.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/read_1_byte.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/read_2_bytes.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/read_2_bytes.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/read_4_bytes.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/read_4_bytes.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/set_oper.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/set_oper.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/valid_args.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/valid_args.c.o"
+  "/Users/lnoisome/Downloads/cor_war/oper_src/write_to_reg.c" "/Users/lnoisome/Downloads/cor_war/cmake-build-debug/CMakeFiles/cor_war.dir/oper_src/write_to_reg.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "AppleClang")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../includes"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

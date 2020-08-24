@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 11:04:52 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/11 21:43:25 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/24 16:06:39 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,14 +49,14 @@ void valid_name(t_pars *pars, t_players *players)
     if ((pars->fd = open(pars->av[pars->i], O_RDONLY)) <= 0)
         ft_error("Invalid file", "valid_name", 2);
     // else if ((pars->fd = open(pars->av[pars->i], O_RDONLY)) < 0)
-    //     ft_error("It's a directory", "valid_name", 2);
+    //     ft_error("It's a directory", "valid_name", 2); 
     // if (players->iter >= MAX_PLAYERS)
     //     ft_error("Too many players", "pars_players", 2);
 	// printf("f\n");
+    // printf("iter = %i\n", players->iter);
+	// printf("iter + 1 = %i\n", players->iter);
     if (!players->arr[players->iter])
         players->arr[players->iter] = ft_calloc(1, sizeof(t_players));
-	// printf("f\n");
-	
     players->arr[players->iter]->id = players->iter + 1;
     players->arr[players->iter]->flag_n = 0;
 }
