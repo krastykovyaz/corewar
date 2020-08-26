@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/13 12:27:42 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 15:07:21 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 13:59:55 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void set_reg(t_car *car, int reg, int value, int f);
 void o_st(t_vm *vm, t_car *car, t_args *arg);
 int def_arg(unsigned char code, unsigned inx);
 unsigned char read_1_byte(t_vm *vm, int position);
-void change_pos(t_car *car, t_args *args, int type);
+void relocate(t_car *car, t_args *args, int type);
 int check_reg(t_vm *vm, t_car *car, int code, int *arg);
 void plus_minus(t_vm *vm, t_car *car, t_args *arg, int type);
 void o_add(t_vm *vm, t_car *car, t_args *arg);

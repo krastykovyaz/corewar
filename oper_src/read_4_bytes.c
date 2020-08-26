@@ -6,13 +6,13 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/15 09:37:14 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:40:50 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 13:24:00 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int read_4_bytes(t_vm *vm, int position)
+int	read_4_bytes(t_vm *vm, int position)
 {
 	int val;
 	int i;

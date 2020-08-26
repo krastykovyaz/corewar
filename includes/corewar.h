@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:07:35 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/19 09:52:18 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 11:54:58 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ unsigned int bit_shift(unsigned char *buffer, int i);
 void valid_exec_size(t_pars *pars, t_players *players);
 void check_comment(t_pars *pars, t_players *players);
 void valid_ex_code(t_pars *pars, t_players *players);
-void finish_players(t_players *players, int new_size);
+void set_players(t_players *players, int new_size);
 void init_carry(t_vm *vm, int iter);
 void	ft_lstadd_start(t_car **head, t_car *new);
 t_car    *ft_lstnew(int position, int id);

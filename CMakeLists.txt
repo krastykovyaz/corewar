@@ -14,7 +14,7 @@ add_executable(cor_war
         corewar_src/conclusion.c
         corewar_src/del_fun.c
         corewar_src/end_dump.c
-        corewar_src/finish_players.c
+        corewar_src/set_players.c
         corewar_src/free_data.c
         corewar_src/ft_error.c
         corewar_src/ft_lstadd.c
@@ -55,7 +55,7 @@ add_executable(cor_war
         libft_src/ft_swap.c
         libft_src/print_memory.c
         oper_src/carret.c
-        oper_src/change_pos.c
+        oper_src/relocate.c
         oper_src/check_arg.c
         oper_src/check_reg.c
         oper_src/def_arg.c

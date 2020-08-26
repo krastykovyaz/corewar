@@ -6,13 +6,13 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/12 21:31:36 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/19 09:31:37 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 09:25:54 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-void set_oper(t_vm *vm)
+void	set_oper(t_vm *vm)
 {
 	vm->operations.op_cycles[0] = 10;
 	vm->operations.op_cycles[1] = 5;

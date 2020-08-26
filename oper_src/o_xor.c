@@ -6,15 +6,15 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/18 10:27:08 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/19 20:21:54 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 14:36:58 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-void o_xor(t_vm *vm, t_car *car, t_args *arg)
+void	o_xor(t_vm *vm, t_car *car, t_args *arg)
 {
-    int			value;
+	int			value;
 
 	arg->first = def_arg(vm->arena[get_pos(car, car->step)], 0);
 	arg->second = def_arg(vm->arena[get_pos(car, car->step)], 1);
@@ -27,6 +27,5 @@ void o_xor(t_vm *vm, t_car *car, t_args *arg)
 		value = arg->f_val ^ arg->s_val;
 		write_to_reg(vm, car, value, arg->third);
 	}
-	change_pos(car, arg, 3);
-	// printf("%i\n", car->position);
+	relocate(car, arg, 3);
 }

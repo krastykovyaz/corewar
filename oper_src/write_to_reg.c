@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/18 09:17:01 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:43:20 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 14:31:58 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@ void write_to_reg(t_vm *vm, t_car *car, int result, int third)
     {
         car->regist[reg_dir] = result;
         car->carry  = result ? 0 : 1;
-        // printf("%i\n", result);
     }
 }

@@ -6,16 +6,16 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/15 19:08:57 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/16 19:46:29 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 14:06:29 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int def_arg(unsigned char code, unsigned arg)
+int	def_arg(unsigned char code, unsigned arg)
 {
 	const unsigned char pos = 0b11000000;
-	
+
 	code = (code << (arg << 1));
 	code = code & pos;
 	if (code == 0b01000000)
@@ -26,5 +26,4 @@ int def_arg(unsigned char code, unsigned arg)
 		return (IND_SIZE);
 	else
 		return (0);
-
 }

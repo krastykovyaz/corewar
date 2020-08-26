@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 10:15:03 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/19 10:34:42 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 08:43:52 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,6 @@ typedef struct s_vm
 	int cur_cycle;
 	int dump_value;
 	int dump_size;
-	int aff;
-	// int winner;
 }						t_vm;
 
 typedef struct s_pars
@@ -76,7 +74,6 @@ typedef struct s_pars
 	int ac;
 	int i;
 	int fd;
-
 	int     dump_flag;
 }				t_pars;
 

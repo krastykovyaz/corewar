@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/19 14:48:04 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/26 13:59:55 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,8 @@ RESET = "\033[0;0m"
 CYAN = "\033[1;35m"
 
 CC = gcc
-# FLAGS = -Wall -Wextra -Werror
-FLAGS = -g
+FLAGS = -Wall -Wextra -Werror
+# FLAGS = -g
 
 
 COREWAR_DIR = ./corewar_src/
@@ -40,7 +40,7 @@ C_SRC = main.c \
 		valid_exec_size.c \
 		check_comment.c \
 		valid_ex_code.c \
-		finish_players.c \
+		set_players.c \
 		init_carry.c \
 		ft_lstnew.c \
 		ft_lstadd.c \
@@ -68,7 +68,7 @@ O_SRC = set_oper.c \
 		get_set_pos.c \
 		check_arg.c \
 		def_arg.c \
-		change_pos.c \
+		relocate.c \
 		read_1_byte.c \
 		o_st.c \
 		check_reg.c \

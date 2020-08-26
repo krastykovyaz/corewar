@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/09 14:31:59 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/19 21:00:50 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 12:25:57 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,18 @@
 
 void init_carry(t_vm *vm, int iter)
 {
-    t_car *list;
-    int i;
+	t_car *list;
+	int i;
 
-    i = 0;
-    list = ft_lstnew(0, 1);
-    vm->id_car++;
-    vm->num_car = 1;
-    while (++i < iter)
-    {
-        ft_lstadd_start(&list, ft_lstnew((MEM_SIZE / iter) * i, i + 1));
-        vm->id_car++;
-        vm->num_car++;
-    }
-    vm->carry = list;
-    // printf("%i\n", list->carry);
+	i = 0;
+	list = ft_lstnew(0, 1);
+	vm->id_car++;
+	vm->num_car = 1;
+	while (++i < iter)
+	{
+		ft_lstadd_start(&list, ft_lstnew((MEM_SIZE / iter) * i, i + 1));
+		vm->id_car++;
+		vm->num_car++;
+	}
+	vm->carry = list;
 }

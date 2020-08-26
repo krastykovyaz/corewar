@@ -6,17 +6,16 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/15 10:19:18 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:38:06 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 13:27:25 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-int16_t read_2_bytes(t_vm *vm, int position)
+int16_t	read_2_bytes(t_vm *vm, int position)
 {
-	int16_t val;
-	int i;
-	int j;
+	int16_t	val;
+	int		i;
 
 	i = 0;
 	val = 0;

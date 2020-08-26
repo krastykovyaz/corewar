@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/18 18:51:05 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/20 19:29:03 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 13:59:55 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ void o_sti(t_vm *vm, t_car *car, t_args *arg)
     // printf("f = %i\n", arg->first);
     // printf("s = %i\n", arg->second);
     // printf("t = %i\n", arg->third);
-    change_pos(car, arg, 3);
+    relocate(car, arg, 3);
     // printf("%i\n", car->position);
 }
