@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/26 13:59:55 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/26 17:04:54 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,7 +122,7 @@ D_FILES_LIBA = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.d, $(L_SRC)))
 
 COREWAR_FILES = $(C_FILES) $(LIBA_FILES) $(O_FILES)
 COREWAR_OBJ = $(C_OBJ) $(LIBA_OBJ) $(O_OBJ)
-D_FILES = $(D_FILES_LEM) \& $(D_FILES_LIBA) \& $(D_FILES_OPER)
+D_FILES = $(D_FILES_CW) \& $(D_FILES_LIBA) \& $(D_FILES_OPER)
 # COREWAR_FILES = $(C_FILES)
 # COREWAR_OBJ = $(C_OBJ)
 # D_FILES = $(D_FILES_CW)
