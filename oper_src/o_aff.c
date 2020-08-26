@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/19 09:15:05 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/26 16:30:28 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 17:13:29 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	o_aff(t_vm *vm, t_car *car, t_args *arg)
 		if (arg->f_val >= 0 && arg->f_val < REG_NUMBER)
 			val = (char)car->regist[arg->f_val];
 	}
-	change_pos(car, arg, 1);
+	relocate(car, arg, 1);
 }
