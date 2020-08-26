@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 11:04:52 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/26 11:52:23 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 16:47:36 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	sort_id(t_players *players, int i, int j)
 			ft_swap(&players->arr[players->arr[i]->id - 1], &players->arr[i]);
 	i = -1;
 	j = 0;
-	while (++i < players->iter)    
+	while (++i < players->iter)
 	{
 		if (!(players->arr[i]->flag_n))
 			players->arr[i] = ar[j++];
@@ -39,7 +39,7 @@ void		valid_name(t_pars *pars, t_players *players)
 {
 	char *ptr;
 
-	if (pars->i == pars-> ac)
+	if (pars->i == pars->ac)
 		ft_error("No player after \"-n\"", "valid_name", 2);
 	ptr = pars->av[pars->i] + (ft_strlen(pars->av[pars->i]) - 4);
 	if (!ft_strequ(ptr, ".cor"))
@@ -52,7 +52,7 @@ void		valid_name(t_pars *pars, t_players *players)
 	players->arr[players->iter]->flag_n = 0;
 }
 
-void 		validate_id(t_players *players)
+void		validate_id(t_players *players)
 {
 	int i;
 	int j;
@@ -64,7 +64,7 @@ void 		validate_id(t_players *players)
 			ft_error("Too large id", "valid_id", 2);
 		j = i;
 		{
-			while(++j < players->iter)
+			while (++j < players->iter)
 				if (players->arr[i]->flag_n && players->arr[j]->flag_n &&\
 				players->arr[i]->id == players->arr[j]->id)
 					ft_error("Id repetition", "valid id", 2);

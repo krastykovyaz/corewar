@@ -6,13 +6,13 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/11 19:48:57 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/18 12:49:47 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 16:55:26 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-static void			add(int i)
+static void	add(int i)
 {
 	char			*str;
 
@@ -25,7 +25,7 @@ static void			add(int i)
 	ft_putstr(" : ");
 }
 
-void	print_memory(const void *arena, size_t size)
+void		print_memory(const void *arena, size_t size)
 {
 	size_t			i;
 	size_t			j;

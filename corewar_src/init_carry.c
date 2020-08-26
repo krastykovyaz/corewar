@@ -6,16 +6,16 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/09 14:31:59 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/08/26 12:25:57 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/08/26 16:58:55 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/corewar.h"
 
-void init_carry(t_vm *vm, int iter)
+void	init_carry(t_vm *vm, int iter)
 {
-	t_car *list;
-	int i;
+	t_car	*list;
+	int		i;
 
 	i = 0;
 	list = ft_lstnew(0, 1);
