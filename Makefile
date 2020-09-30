@@ -3,14 +3,23 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
+#    By: rgero <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/31 22:43:12 by lnoisome          #+#    #+#              #
-#    Updated: 2020/08/26 17:05:29 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/08/26 22:50:38 by rgero            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-COREWAR_NAME = corewar
+DIR_LIBFT 			= libft
+NAME_LIBFT			= $(DIR_LIBFT)/libft.a
+DIR_INC_LIBFT		= $(DIR_LIBFT)/includes
+
+DIR_FT_PRINTF 		= ft_printf
+NAME_FT_PRINTF		= $(DIR_FT_PRINTF)/libftprintf.a
+DIR_INC_PRINTF		= $(DIR_FT_PRINTF)/includes
+
+GCC_LIBFT 			= -L $(DIR_LIBFT) -lft
+GCC_FT_PRINTF		= -L $(DIR_FT_PRINTF) -lftprintf
 
 RED = "\033[1;31m"
 GREEN = "\033[1;32m"
@@ -19,13 +28,51 @@ CYAN = "\033[1;35m"
 
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
-# FLAGS = -g
 
+DIR_SRC				= sources
+DIR_OBJ 			= objects
+DIR_HEADER 			= includes
 
-COREWAR_DIR = ./corewar_src/
-COREWAR_HEADER = ./includes/
+NAME_ASM = asm
+NAME_COREWAR = corewar
 
-C_SRC = main.c \
+DIR_SRC_ASM			= $(DIR_SRC)/$(NAME_ASM)
+DIR_OBJ_ASM 		= $(DIR_OBJ)/$(NAME_ASM)
+
+SRC_LIST_ASM 	= 	add_item.c\
+					asm.c\
+					check_arg.c\
+					check_char.c\
+					check_command.c\
+					check_code.c\
+					check_utils.c\
+					get_next_line_asm.c\
+					error.c\
+					error_parse.c\
+					exit_func.c\
+					init.c\
+					files.c\
+					find_op.c\
+					ft_atoi32.c\
+					parse.c\
+					parse_command.c\
+					parse_operator.c\
+					read_file.c\
+					utils.c\
+					write_output.c\
+					write_file.c
+
+HEADERS_ASM			= asm.h asm_error.h op.h
+
+SRC_ASM			= $(addprefix $(DIR_SRC_ASM)/, $(SRC_LIST_ASM))
+OBJ_ASM			= $(addprefix $(DIR_OBJ_ASM)/, $(SRC_LIST_ASM:.c=.o))
+D_FILES_ASM		= $(addprefix $(DIR_OBJ_ASM)/, $(patsubst %.c, %.d, $(SRC_LIST_ASM)))
+HEADER_ASM			= $(addprefix $(DIR_HEADER)/, $(HEADERS_ASM))
+
+DIR_SRC_COREWAR		= $(DIR_SRC)/$(NAME_COREWAR)
+DIR_OBJ_COREWAR		= $(DIR_OBJ)/$(NAME_COREWAR)
+
+SRC_LIST_COREWAR = main.c \
 		init_data.c \
 		ft_error.c \
 		init_vm.c \
@@ -53,13 +100,18 @@ C_SRC = main.c \
 		del_fun.c \
 		conclusion.c
 
-C_FILES = $(addprefix $(COREWAR_DIR), $(C_SRC))
-C_OBJ = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.o, $(C_SRC)))
-D_FILES_CW = $(addprefix $(COREWAR_DIR), $(patsubst %.c, %.d, $(C_SRC)))
+HEADERS_COREWAR	= corewar.h op.h
 
-OPER_DIR = ./oper_src/
+SRC_COREWAR	= $(addprefix $(DIR_SRC_COREWAR)/, $(SRC_LIST_COREWAR))
+OBJ_COREWAR = $(addprefix $(DIR_OBJ_COREWAR)/, $(patsubst %.c, %.o, $(SRC_LIST_COREWAR)))
+D_FILES_COREWAR = $(addprefix $(DIR_OBJ_COREWAR)/, $(patsubst %.c, %.d, $(SRC_LIST_COREWAR)))
+HEADER_COREWAR = $(addprefix $(DIR_HEADER)/, $(HEADERS_COREWAR))
 
-O_SRC = set_oper.c \
+NAME_OPER = oper
+DIR_SRC_OPER	= $(DIR_SRC)/$(NAME_OPER)
+DIR_OBJ_OPER	= $(DIR_OBJ)/$(NAME_OPER)
+
+SRC_LIST_OPER = set_oper.c \
 		oper_func.c \
 		o_live.c \
 		read_4_bytes.c \
@@ -93,13 +145,18 @@ O_SRC = set_oper.c \
 		o_lfork.c \
 		o_aff.c
 
-O_FILES = $(addprefix $(O_DIR), $(O_SRC))
-O_OBJ = $(addprefix $(OPER_DIR), $(patsubst %.c, %.o, $(O_SRC)))
-D_FILES_OPER = $(addprefix $(OPER_DIR), $(patsubst %.c, %.d, $(O_SRC)))
+HEADERS_OPER	= oper.h
 
-LIBFT_DIR = ./libft_src/
+SRC_OPER	= $(addprefix $(DIR_SRC_COREWAR)/, $(SRC_LIST_COREWAR))
+OBJ_OPER = $(addprefix $(DIR_OBJ_OPER)/, $(patsubst %.c, %.o, $(SRC_LIST_OPER)))
+D_FILES_OPER = $(addprefix $(DIR_OBJ_OPER)/, $(patsubst %.c, %.d, $(SRC_LIST_OPER)))
+HEADER_OPER = $(addprefix $(DIR_HEADER)/, $(HEADERS_OPER))
 
-L_SRC = ft_strlen.c \
+NAME_UTILS = utils
+DIR_SRC_UTILS		= $(DIR_SRC)/$(NAME_UTILS)
+DIR_OBJ_UTILS		= $(DIR_OBJ)/$(NAME_UTILS)
+
+SRC_LIST_UTILS = ft_strlen.c \
 		ft_memcpy.c \
 		ft_memset.c \
 		ft_strequ.c \
@@ -114,46 +171,80 @@ L_SRC = ft_strlen.c \
 		del_end.c \
 		del_start.c \
 		del_midl.c \
-		ft_calloc.c 
+		ft_calloc.c  
 
-LIBA_FILES = $(addprefix $(LIBFT_DIR), $(L_SRC))
-LIBA_OBJ = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.o, $(L_SRC)))
-D_FILES_LIBA = $(addprefix $(LIBFT_DIR), $(patsubst %.c, %.d, $(L_SRC)))
+HEADERS_UTILS	= utils.h
 
-COREWAR_FILES = $(C_FILES) $(LIBA_FILES) $(O_FILES)
-COREWAR_OBJ = $(C_OBJ) $(LIBA_OBJ) $(O_OBJ)
-D_FILES = $(D_FILES_CW) \& $(D_FILES_LIBA) \& $(D_FILES_OPER)
-# COREWAR_FILES = $(C_FILES)
-# COREWAR_OBJ = $(C_OBJ)
-# D_FILES = $(D_FILES_CW)
+SRC_UTILS	= $(addprefix $(DIR_SRC_COREWAR)/, $(SRC_LIST_COREWAR))
+OBJ_UTILS = $(addprefix $(DIR_OBJ_UTILS)/, $(patsubst %.c, %.o, $(SRC_LIST_UTILS)))
+D_FILES_UTILS = $(addprefix $(DIR_OBJ_UTILS)/, $(patsubst %.c, %.d, $(SRC_LIST_UTILS)))
+HEADER_UTILS = $(addprefix $(DIR_HEADER)/, $(HEADERS_UTILS))
+
+C_COREWAR = $(SRC_COREWAR) $(SRC_UTILS) $(SRC_OPER)
+O_COREWAR = $(OBJ_COREWAR) $(OBJ_UTILS) $(OBJ_OPER)
+D_ALL = $(D_FILES_COREWAR) \& $(D_FILES_UTILS) \& $(D_FILES_OPER) \& $(D_FILES_ASM)
+
 .PHONY: all clean fclean re
 
-all: $(COREWAR_NAME)
+all: $(NAME_ASM) $(NAME_COREWAR)
 
-$(COREWAR_NAME): $(COREWAR_OBJ)
-	@$(CC) $(COREWAR_OBJ) -I $(COREWAR_HEADER) -o $(COREWAR_NAME)
-	@echo $(GREEN)$(COREWAR_NAME) -\> Build done!$(RESET)
+$(NAME_ASM): $(DIR_OBJ_ASM) $(OBJ_ASM) $(NAME_LIBFT) $(NAME_FT_PRINTF) $(HEADER_ASM)
+	@$(CC) $(FLAGS) $(OBJ_ASM) -o $(NAME_ASM) $(GCC_LIBFT) $(GCC_FT_PRINTF)
+	@echo $(GREEN)$(NAME_ASM) -\> Build done!$(RESET)
 
-$(COREWAR_DIR)%.o: $(COREWAR_DIR)%.c
-	@$(CC) $(FLAGS) -I $(COREWAR_HEADER) -MD -c $< -o $@
+$(DIR_OBJ_ASM):
+	@mkdir -p $(DIR_OBJ_ASM)
+
+$(NAME_LIBFT):
+	@make -C $(DIR_LIBFT)/
+
+$(NAME_FT_PRINTF):
+	@make -C $(DIR_FT_PRINTF)/
+
+$(DIR_OBJ_ASM)/%.o: $(DIR_SRC_ASM)/%.c $(HEADER_ASM)
+	@$(CC) $(FLAGS) -I $(DIR_HEADER) -I $(DIR_INC_LIBFT) -I $(DIR_INC_PRINTF) -MD -c $< -o $@
 	@echo $(CYAN)Compiling... $<$(RESET)
 
-$(LIBFT_DIR)%.o: $(LIBFT_DIR)%.c
-	@$(CC) $(FLAGS) -I $(LIBFT_DIR) -MD -c $< -o $@
+$(NAME_COREWAR): $(DIR_OBJ_COREWAR) $(DIR_OBJ_UTILS) $(DIR_OBJ_OPER) $(O_COREWAR)
+	@$(CC) $(FLAGS) $(O_COREWAR) -o $(NAME_COREWAR)
+	@echo $(GREEN)$(NAME_COREWAR) -\> Build done!$(RESET)
+
+$(DIR_OBJ_COREWAR):
+	@mkdir -p $(DIR_OBJ_COREWAR)
+
+$(DIR_OBJ_COREWAR)%.o: $(DIR_SRC_COREWAR)%.c
+	@$(CC) $(FLAGS) -I $(DIR_HEADER) -MD -c $< -o $@
 	@echo $(CYAN)Compiling... $<$(RESET)
 
-$(OPER_DIR)%.o: $(OPER_DIR)%.c
-	@$(CC) $(FLAGS) -I $(OPER_DIR) -MD -c $< -o $@
+$(DIR_OBJ_UTILS):
+	@mkdir -p $(DIR_OBJ_UTILS)
+
+$(DIR_OBJ_UTILS)%.o: $(DIR_SRC_UTILS)%.c
+	@$(CC) $(FLAGS) -I $(DIR_HEADER) -MD -c $< -o $@
+	@echo $(CYAN)Compiling... $<$(RESET)
+
+$(DIR_OBJ_OPER):
+	@mkdir -p $(DIR_OBJ_OPER)
+
+$(DIR_OBJ_OPER)%.o: $(DIR_SRC_OPER)%.c
+	@$(CC) $(FLAGS) -I $(DIR_HEADER) -MD -c $< -o $@
 	@echo $(CYAN)Compiling... $<$(RESET)
 
 clean:
-	@rm -rf $(COREWAR_OBJ) $(D_FILES)
+	@/bin/rm -rf $(DIR_OBJ)
+	@make clean -C $(DIR_LIBFT)/
+	@make clean -C $(DIR_FT_PRINTF)/
+	@rm -f  $(OBJ_ASM) $(O_COREWAR) $(D_ALL)
 	@echo $(RED)Object files was deleted$(RESET)
 
 fclean: clean
-	@rm -rf $(COREWAR_NAME) $(D_FILES)
-	@echo $(RED)$(COREWAR_NAME) was deleted$(RESET)
+	@make fclean -C $(DIR_LIBFT)/
+	@make fclean -C $(DIR_FT_PRINTF)/
+	@rm -f $(NAME_ASM)
+	@echo $(RED)$(NAME_ASM) was deleted$(RESET)
+	@rm -f $(NAME_COREWAR)
+	@echo $(RED)$(NAME_COREWAR) was deleted$(RESET)
 
-include $(wildcard $(D_FILES))
+include $(wildcard $(D_ALL))
 
 re: fclean all
